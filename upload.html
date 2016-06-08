@@ -7,9 +7,9 @@ function readURL(input, x) {if (input.files && input.files[0]) {var reader = new
 	</head>
 	<body>
 		<form action='/api/photoup' method='post' enctype='multipart/form-data'>
-			<input type='file' onchange='readURL(this, "source_img");' name='source' /><img id='source_img' src='#' alt='your image'/>
+			<input type='file' onchange='readURL(this, "source_img");' name='source.jpg' /><img id='source_img' src='#' alt='your image'/>
 			<br />
-			<input type='file' onchange='readURL(this, "style_img");' name='style' /><img id='style_img' src='#' alt='your image'/>
+			<input type='file' onchange='readURL(this, "style_img");' name='style.jpg' /><img id='style_img' src='#' alt='your image'/>
 			<br />
 			<input type='submit'>
 		</form>
